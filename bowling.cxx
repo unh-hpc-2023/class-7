@@ -1,5 +1,7 @@
 #include <gtest/gtest.h>
 
+int bowlingScore(const std::vector<int>& rolls) { return 0; }
+
 TEST(Bowling, AllZeros)
 {
   std::vector<int> rolls = {
