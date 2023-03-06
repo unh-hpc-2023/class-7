@@ -66,3 +66,11 @@ TEST(Bowling, SpareAtEnd)
   };
   EXPECT_EQ(bowlingScore(rolls), 5 + 13 + 8 + 19 + 9 + 13);
 }
+
+TEST(Bowling, PerfectGame)
+{
+  std::vector<int> rolls = {
+    10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
+  };
+  EXPECT_EQ(bowlingScore(rolls), 300);
+}
