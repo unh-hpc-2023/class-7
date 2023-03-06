@@ -1,6 +1,13 @@
 #include <gtest/gtest.h>
 
-int bowlingScore(const std::vector<int>& rolls) { return 0; }
+int bowlingScore(const std::vector<int>& rolls)
+{
+  int score = 0;
+  for (auto roll : rolls) {
+    score += roll;
+  }
+  return score;
+}
 
 TEST(Bowling, AllZeros)
 {
