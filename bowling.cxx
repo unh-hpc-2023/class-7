@@ -3,8 +3,8 @@
 int bowlingScore(const std::vector<int>& rolls)
 {
   int score = 0;
-  for (auto roll : rolls) {
-    score += roll;
+  for (int i = 0; i < rolls.size(); i++) {
+    score += rolls[i];
   }
   return score;
 }
