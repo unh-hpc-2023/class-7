@@ -26,3 +26,11 @@ TEST(Bowling, RegularGame)
   };
   EXPECT_EQ(bowlingScore(rolls), 14);
 }
+
+TEST(Bowling, GameWithSpare)
+{
+  std::vector<int> rolls = {
+    0, 0, 2, 3, 4, 6, 3, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 5,
+  };
+  EXPECT_EQ(bowlingScore(rolls), 5 + 13 + 8 + 9);
+}
