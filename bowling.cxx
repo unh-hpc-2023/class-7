@@ -58,3 +58,11 @@ TEST(Bowling, StrikeAtEnd)
   };
   EXPECT_EQ(bowlingScore(rolls), 5 + 13 + 8 + 19 + 9 + 17);
 }
+
+TEST(Bowling, SpareAtEnd)
+{
+  std::vector<int> rolls = {
+    0, 0, 2, 3, 4, 6, 3, 5, 0, 0, 10, 5, 4, 0, 0, 0, 0, 6, 4, 3,
+  };
+  EXPECT_EQ(bowlingScore(rolls), 5 + 13 + 8 + 19 + 9 + 13);
+}
